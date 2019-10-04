@@ -1,0 +1,2 @@
+# ares
+ django web application
