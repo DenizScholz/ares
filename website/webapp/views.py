@@ -5,6 +5,30 @@ from django.views import View
 
 
 class Home(View):
+    title = 'Home'
+
     def get(self, request):
-        context = {}
+        context = {
+            'title': self.title,
+        }
         return render(request, 'webapp/index.html', context=context)
+
+
+class Pricing(View):
+    title = 'Pricing'
+
+    def get(self, request):
+        context = {
+            'title': self.title,
+        }
+        return render(request, 'webapp/pricing.html', context=context)
+
+
+class About(View):
+    title = 'About'
+
+    def get(self, request):
+        context = {
+            'title': self.title,
+        }
+        return render(request, 'webapp/about.html', context=context)
