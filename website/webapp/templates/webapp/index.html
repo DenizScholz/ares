@@ -24,20 +24,17 @@
 
 {% block content %}
 
-<!-- TODO FIX GRADIENT -->
-
-<div class="container-fluid" style="background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(30,122,249,0.26094187675070024) 50%);">
+<div class="container-fluid">
 
     <div class="row px-md-5 mt-4">
         <div class="col-md-5 text-center text-md-right my-5">
-            <img src="{% static 'images/ares.jpg' %}" alt="My image" class="border border-info shadow-lg"
+            <img src="{% static 'images/ares.jpg' %}" alt="My image" class="border border-danger shadow-lg"
                 style="border-radius: 50%; width: 90%; max-width: 250px;">
         </div>
         <div class="col-md-7 my-auto p-md-5">
             <div class="text-center text-md-left ">
-                <h5 class="display-3 p-0 m-0"
-                    style="color: #599fff; font-size: 4em; font-family: 'Open Sans', sans-serif;">AresVFX</h5>
+                <h5 class="display-3 p-2 m-0"
+                    style="color: rgb(255, 72, 72); font-size: 4em; font-family: 'Open Sans', sans-serif;">AresVFX</h5>
                 <small class="p-0 pl-md-2 m-0 text-right" style="color: rgba(255,255,255,.6);">Visual Effect
                     Artist</small>
                 <br>
@@ -55,8 +52,8 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(30,122,249,0.26094187
                 </small>
             </div>
             <div class="text-center text-md-left mx-2 my-4">
-                <a href="{% url 'pricing' %}" class="btn btn-outline-primary px-3 my-2 btn-block-sm shadow-lg"
-                    style="border-radius: 200px">
+                <a href="{% url 'pricing' %}" class="btn btn-outline-danger px-3 my-2 btn-block-sm shadow-lg"
+                    style="border-radius: 200px;">
                     Products and Pricing
                 </a>
             </div>
@@ -66,62 +63,59 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(30,122,249,0.26094187
 
     <div class="text-center mt-5 mt-md-0 p-5">
 
-        <hr style="background-color: #7da8e3" class="mb-4 w-25 d-block d-sm-block d-md-none">
+        <hr style="background-color: rgba(255,255,255,.2)" class="mb-4 w-25 d-block d-sm-block d-md-none">
         <p>Be sure to stay connected with me</p>
 
         <a href="https://www.facebook.com/chandlerdavis9215" style="text-decoration: none;">
             <span style="font-size: 2.5em;">
-                <i class="fab fa-facebook shadow" style="color: #7da8e3;"></i>
+                <i class="fab fa-facebook" style="color: #ff5d5d;"></i>
             </span>
         </a>
         <a href="https://www.youtube.com/channel/UCrnmmpa2qjo0-Fe8g6CkbXQ" style="text-decoration: none;">
             <span style="font-size: 2.5em;">
-                <i class="fab fa-youtube shadow" style="color: #7da8e3;"></i>
+                <i class="fab fa-youtube" style="color: #ff5d5d;"></i>
             </span>
         </a>
         <a href="https://twitter.com/DareAres" style="text-decoration: none;">
             <span style="font-size: 2.5em;">
-                <i class="fab fa-twitter shadow" style="color: #7da8e3;"></i>
+                <i class="fab fa-twitter" style="color: #ff5d5d;"></i>
             </span>
         </a>
 
         <a href="https://www.instagram.com/areesvfx/" style="text-decoration: none;">
             <span style="font-size: 2.5em;">
-                <i class="fab fa-instagram shadow" style="color: #7da8e3;"></i>
+                <i class="fab fa-instagram" style="color: #ff5d5d;"></i>
             </span>
         </a>
 
         <br>
         <button href="" class="btn p-0 m-0" onclick="EmailMe()" style="text-decoration: none;">
-            <small style="color: #7da8e3;">chandlerdavis9215@outlook.com</small>
+            <small style="color: rgba(255,255,255,.6);">chandlerdavis9215@outlook.com</small>
         </button>
 
-        <hr style="background-color: #7da8e3" class="mt-5 w-50">
+        <hr style="background-color: rgba(255,255,255,.2)" class="mt-5 w-50">
 
     </div>
 </div>
 
-<div style="background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,122,249,0.26094187675070024) 40%);" class=" pb-5">
-    <div class="container-fluid mb-5">
-        <div class="w-75 mx-auto">
-            <h4 class="pt-5 mb-4 px-2" style="font-size: 1.5em; color: rgba(255,255,255,0.8);">Featured</h4>
-        </div>
-        <div class="embed-responsive embed-responsive-16by9 w-75 mx-auto shadow border border-info">
-            <iframe class="embed-responsive-item my-auto" src="https://www.youtube.com/embed/KSVuVts4krc"
-                allowfullscreen></iframe>
-        </div>
+
+<div class="container-fluid mb-5">
+    <div class="w-75 mx-auto">
+        <h4 class="pt-5 mb-4 px-2" style="font-size: 1.5em; color: rgba(255,255,255,0.8);">Featured</h4>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9 w-75 mx-auto shadow border border-danger">
+        <iframe class="embed-responsive-item my-auto" src="https://www.youtube.com/embed/KSVuVts4krc"
+            allowfullscreen></iframe>
     </div>
 </div>
+
 <hr style="background-color: rgba(255,255,255,.2)" class="w-100 mt-5">
 
-<div class="row p-5" style="background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(30,122,249,0.26094187675070024) 50%);">
-
+<div class="row p-5">
     <div class="col-md-6 text-right my-auto">
         <p class="text-center">“The most important thing in the world <br> is family and
             love.”</p>
-        <small class="text-muted p-5">- John Wooden</small>
+        <small class="p-5" style="color: rgba(255,255,255,.6);">- John Wooden</small>
     </div>
     <div class="col-md-6 p-5">
         <div id="carouselExampleIndicators" class="carousel slide mx-auto" style="max-width: 400px;"
@@ -154,11 +148,11 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(30,122,249,0.26094187
             border: none;
             border-radius: 50%;
             padding: 12px 16px; 
-            cursor: pointer;"> <i class=" fas fa-arrow-up mx-auto"
-                style="font-size: 2em; color: rgba(255,255,255,.3);"></i>
+            cursor: pointer;"> <i class="fas fa-arrow-up mx-auto"
+                style="font-size: 2em; color: rgba(255,255,255,.7);"></i>
         </button>
         <br>
-        <small class="text-muted my-4 py-4">Back to top</small>
+        <small class="my-4 py-4" style="color: rgba(255,255,255,.6);">Back to top</small>
     </div>
 
 
