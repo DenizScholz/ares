@@ -1,2 +1,2 @@
 # ares
- django web application
+Simple Landing Page - built with Django
